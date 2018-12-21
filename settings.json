@@ -1,0 +1,96 @@
+{
+  "workbench.iconTheme": "vscode-icons",
+  "editor.tabSize": 2,
+  "editor.formatOnSave": true,
+  "editor.fontLigatures": true,
+  "editor.fontFamily": "'Dank Mono',Consolas, 'Courier New', monospace",
+  "editor.fontSize": 14,
+  "flow.enabled": false,
+  "terminal.integrated.fontFamily": "'MesloLGM Nerd Font'",
+  "window.zoomLevel": 0,
+  "files.associations": {
+    // <~ In order to put all the JS files in React mode
+    "*.js": "javascriptreact"
+  },
+  "better-comments.multilineComments": true,
+  "vsicons.presets.foldersAllDefaultIcon": true,
+  "workbench.colorCustomizations": {},
+  "importCost.bundleSizeDecoration": "both",
+  "importCost.showCalculatingDecoration": false,
+  "importCost.javascriptExtensions": ["\\.jsx?$"],
+  "explorer.openEditors.visible": 0,
+  "workbench.statusBar.feedback.visible": false,
+  "explorer.autoReveal": false,
+  "explorer.confirmDragAndDrop": true,
+  "gitlens.historyExplorer.enabled": true,
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/bower_components": true,
+    "**/bflow.webflow": true,
+    "**/flow-stubs": true,
+    "**/flow-typed": true
+  },
+  "search.location": "sidebar",
+  "prettier.disableLanguages": ["json", "JSON"],
+  "editor.tokenColorCustomizations": {
+    "textMateRules": [
+      {
+        "scope": [
+          //following will be in italic (=FlottFlott)
+          "comment",
+          "storage",
+          "keyword", //import, export, return…
+          "constant", //String, Number, Boolean…, this, super
+          "storage.modifier", //static keyword
+          "storage.type.class.js", //class keyword
+          "variable.language.super.js", // super keyword
+          "entity.other.attribute-name", // JSX attribute
+          "variable.language.this.js", // this keyword
+          "keyword.operator.expression.delete.js", // delete keyword
+          "source.js keyword.operator.new", // new keyword
+          "support.type.property-name.css" // css props
+        ],
+        "settings": {
+          "fontStyle": "italic"
+        }
+      },
+      {
+        "scope": [
+          //following will be excluded from italics (VSCode has some defaults for italics)
+          "invalid",
+          "keyword.operator",
+          "constant.numeric.css",
+          "keyword.other.unit.px.css",
+          "constant.numeric.decimal.js",
+          "constant.numeric.json",
+          "entity.other.attribute-name.class.css"
+        ],
+        "settings": {
+          "fontStyle": ""
+        }
+      }
+    ]
+  },
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "workbench.statusBar.visible": true,
+  "tslint.autoFixOnSave": true,
+  "typescript.suggest.completeFunctionCalls": true,
+  "prettier.tslintIntegration": true,
+  "prettier.bracketSpacing": false,
+  "prettier.arrowParens": "avoid",
+  "prettier.eslintIntegration": true,
+  "prettier.jsxBracketSameLine": true,
+  "prettier.parser": "flow",
+  "prettier.printWidth": 120,
+  "prettier.semi": false,
+  "prettier.singleQuote": true,
+  "prettier.stylelintIntegration": true,
+  "prettier.useTabs": false,
+  "eslint.enable": true,
+  "breadcrumbs.enabled": true,
+  "workbench.startupEditor": "newUntitledFile",
+  "workbench.colorTheme": "Over Night Owl",
+  "gitlens.views.fileHistory.enabled": true,
+  "gitlens.views.lineHistory.enabled": true,
+  "javascript.updateImportsOnFileMove.enabled": "always"
+}
